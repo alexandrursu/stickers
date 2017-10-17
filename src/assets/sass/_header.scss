@@ -1,0 +1,246 @@
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+  header {
+    .pre-header {
+      background: $primary-color;
+      display: block;
+      height: 20px;
+      padding: 0 10px;
+      .languages {
+        margin: 0;
+        padding: 0;
+        li {
+          cursor: pointer;
+          display: inline-block;
+          color: $white;
+          float: right;
+          border-left: 1px solid $white;
+          padding: 0 5px;
+          line-height: 12px;
+          font-weight: bold;
+          margin-top: 4px;
+
+          &:last-child {
+            border: none;
+          }
+        }
+
+        &.ro .ro,
+        &.en .en,
+        &.ru .ru {
+          color: $orange;
+        }
+      }
+    }
+
+    .border {
+      height: 20px;
+      width: 100%;
+      display: block;
+      background: url(../images/header-border.svg) no-repeat;
+      background-size: contain;
+    }
+
+    .sub-header {
+      padding: 10px 10px 20px 10px;
+      height: 65px;
+      .logo {
+        height: 66px;
+        width: 190px;
+        display: block;
+        text-indent: -99999px;
+        background-size: 150px;
+        background: url(../images/logo.svg) no-repeat;
+        float: left;
+        margin-right: 20px;
+      }
+
+      .made-in-moldova {
+        font-size: 12px;
+        margin-top: 10px;
+        line-height: 12px;
+        float: right;
+
+      }
+
+      .slogan {
+        font-size: 12px;
+        font-weight: 900;
+        line-height: 12px;
+        float: right;
+      }
+    }
+  }
+}
+
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 481px) and (max-width: 979px) {
+  header {
+    .pre-header {
+      background: $primary-color;
+      display: block;
+      height: 20px;
+      padding: 0 10px;
+      .languages {
+        margin: 0;
+        padding: 0;
+        li {
+          cursor: pointer;
+          display: inline-block;
+          color: $white;
+          float: right;
+          border-left: 1px solid $white;
+          padding: 0 5px;
+          line-height: 12px;
+          font-weight: bold;
+          margin-top: 4px;
+
+          &:last-child {
+            border: none;
+          }
+        }
+
+        &.ro .ro,
+        &.en .en,
+        &.ru .ru {
+          color: $orange;
+        }
+      }
+    }
+
+    .border {
+      height: 20px;
+      width: 100%;
+      display: block;
+      background: url(../images/header-border.svg) no-repeat;
+      background-size: contain;
+    }
+
+    .sub-header {
+      padding: 10px 20px 20px;
+      height: 65px;
+      position: relative;
+      .logo {
+        height: 66px;
+        width: 190px;
+        display: block;
+        text-indent: -99999px;
+        background-size: 150px;
+        background: url(../images/logo.svg) no-repeat;
+        float: left;
+        margin-right: 20px;
+      }
+
+      .made-in-moldova {
+        font-size: 12px;
+        margin-top: 10px;
+        line-height: 12px;
+        float: right;
+        opacity: 0.8;
+      }
+
+      .slogan {
+        font-size: 16px;
+        font-weight: 900;
+        line-height: 12px;
+        float: right;
+        display: block;
+        position: absolute;
+        right: 20px;
+        bottom: 20px;
+        color: $primary-color;
+      }
+    }
+  }
+}
+
+
+/* Large desktop */
+@media (min-width: 980px) {
+  header {
+    .pre-header {
+      background: $primary-color;
+      display: block;
+      height: 20px;
+      padding: 0 10px;
+      .languages {
+        margin: 0;
+        padding: 0;
+        li {
+          cursor: pointer;
+          display: inline-block;
+          color: $white;
+          float: right;
+          border-left: 1px solid $white;
+          padding: 0 5px;
+          line-height: 12px;
+          font-weight: bold;
+          margin-top: 4px;
+
+          &:last-child {
+            border: none;
+          }
+
+          &:first-child {
+            padding-right: 0;
+          }
+        }
+
+        &.ro .ro,
+        &.en .en,
+        &.ru .ru {
+          color: $orange;
+        }
+      }
+    }
+
+    .border {
+      height: 20px;
+      width: 100%;
+      display: block;
+      background: url(../images/header-border.svg) no-repeat;
+    }
+
+    .sub-header {
+      padding: 20px 0px;
+      height: 89px;
+      position: relative;
+      .logo {
+        height: 66px;
+        width: 190px;
+        display: block;
+        text-indent: -99999px;
+        background-size: 150px;
+        background: url(../images/logo.svg) no-repeat;
+        float: left;
+        margin-right: 20px;
+      }
+
+      .made-in-moldova {
+        font-size: 12px;
+        margin-top: 10px;
+        line-height: 12px;
+        float: right;
+        opacity: 0.8;
+      }
+
+      .slogan {
+        font-size: 16px;
+        font-weight: 900;
+        line-height: 12px;
+        float: right;
+        display: block;
+        position: absolute;
+        right: 0;
+        bottom: 33px;
+      }
+    }
+  }
+}
+
+
+
+
+
