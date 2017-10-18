@@ -38,10 +38,16 @@ router.get('/users', function(req, res, next) {
     // And insert something like this instead:
     res.json([{
         id: 1,
-        username: "samsepi0l"
+        name: "about project"
     }, {
         id: 2,
-        username: "D0loresH4ze"
+        name: "custom sticker"
+    }, {
+        id: 2,
+        name: "faq"
+    }, {
+        id: 2,
+        name: "contact"
     }]);
 });
 

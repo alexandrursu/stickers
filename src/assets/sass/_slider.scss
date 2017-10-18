@@ -54,7 +54,7 @@
           &:after {
             display: block;
             content: '';
-            background: #59C7C1;
+            background: $blue;
             width: 60%;
             position: absolute;
             z-index: -1;
@@ -62,15 +62,27 @@
             -o-transition: all 0.2s;
             transition: all 0.2s;
             height: 18px;
-            -webkit-transform: rotate(1deg);
-            -ms-transform: rotate(1deg);
+            -webkit-transform: rotate(-2deg);
+            -ms-transform: rotate(-2deg);
             transform: rotate(-2deg);
             bottom: 10px;
             left: 38px;
           }
         }
       }
+
+      button {
+        margin: 23px auto 0 auto;
+        display: block;
+      }
     }
+  }
+
+  .description {
+    clear: both;
+    display: block;
+    width: 100%;
+    margin-top: 10px;
   }
 }
 

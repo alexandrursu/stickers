@@ -1,23 +1,51 @@
 
 /* Landscape phones and down */
 @media (max-width: 480px) {
-
+  .border {
+    height: 20px;
+    width: 100%;
+    display: block;
+    background: url(../images/header-border.svg) no-repeat;
+    background-size: contain;
+  }
 }
 
 
 /* Portrait tablet to landscape and desktop */
 @media (min-width: 481px) and (max-width: 979px) {
-
+  .border {
+    height: 20px;
+    width: 100%;
+    display: block;
+    background: url(../images/header-border.svg) no-repeat;
+    background-size: contain;
+  }
 }
 
 
 /* Large desktop */
 @media (min-width: 980px) {
+  .border {
+    height: 20px;
+    width: 100%;
+    display: block;
+    background: url(../images/header-border.svg) no-repeat;
+  }
+
   h2 {
     font-weight: 900;
     font-size: 40px;
     text-align: right;
     margin-top: 10px;
+    margin-bottom: 20px;
+  }
+
+  h3 {
+    font-weight: 900;
+    font-size: 24px;
+    text-align: right;
+    margin-top: 10px;
+    margin-bottom: 0;
   }
 
   .left-side {
@@ -34,6 +62,51 @@
   }
 }
 
+button {
+  height: 30px;
+  padding: 0 10px;
+  background: $orange;
+  border: 0;
+  font-size: 24px;
+  font-weight: 900;
+  text-transform: lowercase;
+  line-height: 30px;
+}
+
+.clear {
+  clear: both;
+  display: block;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+}
+
+.text {
+  color: $primary-color;
+  font-size: 22px;
+  text-align: justify;
+
+  .highlight {
+    position: relative;
+    &:after {
+      content: '';
+      height: 2px;
+      background: $blue;
+      transform: rotate(-1deg);
+      display: block;
+      width: 100%;
+      position: absolute;
+      bottom: -2px;
+      right: 0;
+    }
+  }
+  
+  b {
+    font-weight: 900;
+    color: $blue;
+  }
+}
 
 
 

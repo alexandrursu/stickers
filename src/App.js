@@ -1,6 +1,7 @@
 import React, { Component, PropTypes } from 'react';
 import Menu from './body/menu';
 import Slider from './body/slider';
+import Description from './body/description';
 import ProductDescription from './body/product-description';
 import Logo from './header/logo';
 import en from 'react-intl/locale-data/en';
@@ -68,6 +69,8 @@ class App extends Component {
                             <h2>experimental [pack #1]</h2>
                             <Slider />
                             <ProductDescription />
+                            <div className="clear"></div>
+                            <Description />
                         </div>
                     </section>
                     <section>

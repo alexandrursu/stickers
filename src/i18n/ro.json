@@ -2,6 +2,18 @@
   "app.description": "made in Molodva",
   "app.slogan": "stickers for real devs",
   "app.quantity": "cantitatea",
-  "app.stickers": "stickers"
-
+  "app.stickers": "stickers",
+  "app.price":"price",
+  "app.release_date":"realese date",
+  "app.stock":"stock",
+  "app.packs":"100 packs",
+  "app.delivery":"delivery",
+  "app.notify":"notify me",
+  "app.free":"free",
+  "app.description1":"for only $5, I will mail you a pack of 10 dev stickers, I am planning to have 100 packs only, you can book an ",
+  "app.description2":"email notification",
+  "app.description3":" now and you will get an extra",
+  "app.discount":" $1 discount",
+  "app.description4":" when they are ready we will send you a notification.",
+  "app.description5":" people already subscribed to notification!"
 }

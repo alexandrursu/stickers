@@ -24,7 +24,7 @@ class ProductDescription extends Component {
                 </li>
                 <li>
                     <label>
-                        <FormattedMessage id="app.realesedate" />
+                        <FormattedMessage id="app.release_date" />
                     </label>
                     <div className="details">
                         november 2017
@@ -35,7 +35,9 @@ class ProductDescription extends Component {
                         <FormattedMessage id="app.stock" />
                     </label>
                     <div className="details">
-                        <span className="highlight">100 packs</span>
+                        <span className="highlight">
+                            <FormattedMessage id="app.packs" />
+                        </span>
                     </div>
                 </li>
                 <li>
@@ -43,11 +45,13 @@ class ProductDescription extends Component {
                         <FormattedMessage id="app.delivery" />
                     </label>
                     <div className="details">
-                        free
+                        <FormattedMessage id="app.free" />
                     </div>
                 </li>
                 <li>
-                    <button>Notify me</button>
+                    <button>
+                        <FormattedMessage id="app.notify" />
+                    </button>
                 </li>
             </ul>
         );

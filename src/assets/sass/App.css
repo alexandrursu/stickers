@@ -1,20 +1,122 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Alegreya+Sans:100,300,400,900&subset=cyrillic");
 /* Landscape phones and down */
+@media (max-width: 480px) {
+  .border {
+    height: 20px;
+    width: 100%;
+    display: block;
+    background: url(../images/header-border.svg) no-repeat;
+    background-size: contain; } }
+
 /* Portrait tablet to landscape and desktop */
+@media (min-width: 481px) and (max-width: 979px) {
+  .border {
+    height: 20px;
+    width: 100%;
+    display: block;
+    background: url(../images/header-border.svg) no-repeat;
+    background-size: contain; } }
+
 /* Large desktop */
 @media (min-width: 980px) {
+  .border {
+    height: 20px;
+    width: 100%;
+    display: block;
+    background: url(../images/header-border.svg) no-repeat; }
   h2 {
     font-weight: 900;
     font-size: 40px;
     text-align: right;
-    margin-top: 10px; }
+    margin-top: 10px;
+    margin-bottom: 20px; }
+  h3 {
+    font-weight: 900;
+    font-size: 24px;
+    text-align: right;
+    margin-top: 10px;
+    margin-bottom: 0; }
   .left-side {
     float: left;
     width: 20%; }
   .right-side {
     float: left;
     width: 80%; } }
+
+button {
+  height: 30px;
+  padding: 0 10px;
+  background: #FFB80C;
+  border: 0;
+  font-size: 24px;
+  font-weight: 900;
+  text-transform: lowercase;
+  line-height: 30px; }
+
+.clear {
+  clear: both;
+  display: block;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0; }
+
+.text {
+  color: #4a4a4a;
+  font-size: 22px;
+  text-align: justify; }
+  .text .highlight {
+    position: relative; }
+    .text .highlight:after {
+      content: '';
+      height: 2px;
+      background: #59C7C1;
+      transform: rotate(-1deg);
+      display: block;
+      width: 100%;
+      position: absolute;
+      bottom: -2px;
+      right: 0; }
+  .text b {
+    font-weight: 900;
+    color: #59C7C1; }
+
+/* Landscape phones and down */
+/* Portrait tablet to landscape and desktop */
+/* Large desktop */
+@media (min-width: 980px) {
+  .menu {
+    margin: 0;
+    padding: 0; }
+    .menu li {
+      height: 40px;
+      width: 100%;
+      display: block;
+      background: url(../images/header-border.svg) no-repeat 0 37px;
+      line-height: 40px; }
+      .menu li a {
+        font-weight: 900;
+        color: #4a4a4a;
+        text-decoration: none;
+        display: block;
+        position: relative; }
+      .menu li:hover a:after {
+        display: block;
+        content: '';
+        background: #FFB80C;
+        width: 60%;
+        position: absolute;
+        z-index: -1;
+        -webkit-transition: all 0.2s;
+        -o-transition: all 0.2s;
+        transition: all 0.2s;
+        height: 13px;
+        -webkit-transform: rotate(-2deg);
+        -ms-transform: rotate(-2deg);
+        transform: rotate(-2deg);
+        bottom: 13px;
+        left: -15px; } }
 
 /* Landscape phones and down */
 /* Portrait tablet to landscape and desktop */
@@ -62,11 +164,19 @@
             -o-transition: all 0.2s;
             transition: all 0.2s;
             height: 18px;
-            -webkit-transform: rotate(1deg);
-            -ms-transform: rotate(1deg);
+            -webkit-transform: rotate(-2deg);
+            -ms-transform: rotate(-2deg);
             transform: rotate(-2deg);
             bottom: 10px;
-            left: 38px; } }
+            left: 38px; }
+      .product li button {
+        margin: 23px auto 0 auto;
+        display: block; }
+  .description {
+    clear: both;
+    display: block;
+    width: 100%;
+    margin-top: 10px; } }
 
 /* Landscape phones and down */
 @media (max-width: 480px) {
@@ -94,12 +204,6 @@
       header .pre-header .languages.en .en,
       header .pre-header .languages.ru .ru {
         color: #FFB80C; }
-  header .border {
-    height: 20px;
-    width: 100%;
-    display: block;
-    background: url(../images/header-border.svg) no-repeat;
-    background-size: contain; }
   header .sub-header {
     padding: 10px 10px 20px 10px;
     height: 65px; }
@@ -149,12 +253,6 @@
       header .pre-header .languages.en .en,
       header .pre-header .languages.ru .ru {
         color: #FFB80C; }
-  header .border {
-    height: 20px;
-    width: 100%;
-    display: block;
-    background: url(../images/header-border.svg) no-repeat;
-    background-size: contain; }
   header .sub-header {
     padding: 10px 20px 20px;
     height: 65px;
@@ -213,11 +311,6 @@
       header .pre-header .languages.en .en,
       header .pre-header .languages.ru .ru {
         color: #FFB80C; }
-  header .border {
-    height: 20px;
-    width: 100%;
-    display: block;
-    background: url(../images/header-border.svg) no-repeat; }
   header .sub-header {
     padding: 20px 0px;
     height: 89px;

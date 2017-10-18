@@ -1,3 +1,4 @@
+// eslint-disable-next-line
 /*
   Okay folks, want to learn a little bit about webpack?
 */
